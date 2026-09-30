@@ -549,7 +549,7 @@ JSON Schema format:
 Include at least 6 to 18 primitive elements to build a detailed, recognizable structure.
 Position the model so its base rests around y=0. Height max 4 units.`;
 
-      const apiKey = "";
+      const apiKey = localStorage.getItem('gemini_api_key') || '';
       const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${apiKey}`;
 
       try {
